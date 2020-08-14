@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: darkgreen;
+            padding: 20px;
+            border: 20px solid black;
+        }
+
+        .box2 {
+            box-sizing: border-box;
+            width: 100px;
+            height: 100px;
+            background-color: darkmagenta;
+            padding: 20px;
+            border: 20px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 传统盒模型：content-box盒子的尺寸由width+padding+border -->
+    <div class="box1"></div>
+    <!-- css3盒模型：content-box，width便为盒子的尺寸，包含内容,padding,border -->
+    <div class="box2"></div>
+</body>
+
+</html>
