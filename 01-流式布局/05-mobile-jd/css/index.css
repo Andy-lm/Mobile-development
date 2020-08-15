@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* 取消移动端a标签高亮 */
+    -webkit-tap-highlight-color: transparent;
+}
+
+input {
+    -webkit-appearance: none;
+}
+
+img,a {
+    /* 禁用长按页面弹出菜单 */
+    -webkit-touch-callout: none;
+}
+body {
+    margin: 0 auto;
+    width: 100%;
+    min-width: 320px;
+    max-width: 640px;
+    color: #666;
+    font-size: 14px;
+    font-family: -apple-system, Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: #fff;
+}
+
+img {
+    vertical-align: middle;
+}
+.app {
+    background-color: #333333;
+    height: 45px;
+}
+
+.app ul li {
+    margin-top: 0;
+    float: left;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    background-color: #333333;
+    list-style: none;
+    color: #ffffff;
+}
+
+.app ul li:nth-child(1){
+    width: 8%;
+}
+
+.app ul li:nth-child(1) img {
+    width: 10px;
+}
+
+.app ul li:nth-child(2){
+    width: 10%;
+}
+
+.app ul li:nth-child(2) img {
+    width: 30px;
+    /* 行内或行内块元素默认与元素的基线对齐 */
+    /* 同理在图片底部空白间隙可以使用vertical-align: buttom;解决 */
+    vertical-align: middle;
+}
+
+.app ul li:nth-child(3){
+    width: 57%;
+}
+
+.app ul li:nth-child(4){
+    width: 25%;
+    background-color: #F63515;
+}
+/* 搜索 */
+.search-wrap {
+    overflow: hidden;
+    position: fixed;
+    height: 44px;
+    width: 100%;
+    z-index: 3;
+    min-width: 320px;
+    max-width: 640px;
+}
+
+.search-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 100%;
+}
+    /* 伪元素选择器注意点：
+    1.伪元素属于行内元素
+    2.其必须有content属性
+    3.新创建的元素在文档中找不到故为伪元素 */
+.search-btn::before {
+    content: "";
+    margin: 14px 0 0 15px;
+    display: block;
+    width: 20px;
+    height: 18px;
+    background: url(../images/s-btn.png) no-repeat;
+    background-size: 100%;
+}
+
+.search-login {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 100%;
+    line-height: 44px;
+    color: white;
+}
+.search {
+    position: relative;
+    margin: 7px 50px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #ffffff;
+}
+
+.jd-icon {
+    position: absolute;
+    top: 8px;
+    left: 15px;
+    width: 20px;
+    height: 15px;
+    background: url(../images/jd.png) no-repeat;
+    background-size: 100%;
+}
+
+.jd-icon::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 26px;
+    width: 1px;
+    height: 16px;
+    background-color: #dddddd;
+}
+
+.search-icon {
+    position: absolute;
+    top: 8px;
+    left: 50px;
+    width: 18px;
+    height: 15px;
+    /*  */
+    background: url(../images/jd-sprites.png) no-repeat -80px 0;
+    background-size: 200px;
+}
+.main-content {
+    position: relative;
+    width: 100%;
+}
+.slider-bg {
+    position: absolute;
+    top: 0;
+    left: -25%;
+    height: 7.25rem;
+    width: 150%;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    background-image: linear-gradient(0deg,#f1503b,#c82519 50%);
+    z-index: 1;
+}
+
+.slider {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    z-index: 2;
+}
+.slider img {
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 93%;
+    border-radius: 8px;
+}
+
+.brand {
+    overflow: hidden;
+    position: absolute;
+    top: 190px;
+    left: 0;
+    border-radius: 10px 10px 0 0;
+}
+.brand div {
+    float: left;
+    width: 33.33%;
+}
+
+/* 导航模块 */
+.brand div img {
+    width: 100%;
+}
+
+nav {
+    position: absolute;
+    top: 300px;
+    left: 0;
+    width: 100%;
+}
+
+nav a {
+    float: left;
+    width: 20%;
+    text-align: center;
+    color: #666;
+    text-decoration: none;
+}
+
+nav a img {
+    width: 40px;
+    margin: 10px 0;
+}
+
+.news {
+    position: absolute;
+    top: 480px;
+    left: 0;
+}
+
+.news a {
+    box-sizing: border-box;
+    float: left;
+}
+
+.news a img {
+    width: 100%;
+}
+.news a:nth-child(1) {
+    width: 50%;
+}
+.news a:nth-child(n+2) {
+    width: 25%;
+    border-left: 1px solid #cccccc;
+}
