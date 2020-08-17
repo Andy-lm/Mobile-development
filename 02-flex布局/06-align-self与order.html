@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            margin: 0 auto;
+            display: flex;
+            width: 60%;
+            height: 600px;
+            background-color: greenyellow;
+        }
+
+        span {
+            flex: 1;
+            width: 150px;
+            height: 150px;
+            background-color: indigo;
+        }
+
+        span:nth-child(2) {
+            /* 定义子项的排列顺序 */
+            order: 2;
+            /* 控制单个子项在侧轴上的排列方式 */
+            /* 一般在单行元素时使用 */
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+    </section>
+</body>
+
+</html>

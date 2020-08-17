@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            display: flex;
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            width: 80%;
+            height: 150px;
+            background-color: darkred;
+            margin: 0 auto;
+        }
+
+        /* 均匀分配各个盒子 */
+        div:nth-child(1) {
+            flex: 1;
+            /* width: 200px; */
+            height: 150px;
+            background-color: darkviolet;
+        }
+
+        div:nth-child(2) {
+            flex: 1;
+            /* width: 200px; */
+            height: 150px;
+            background-color: deeppink;
+        }
+
+        div:nth-child(3) {
+            flex: 1;
+            /* width: 200px; */
+            height: 150px;
+            background-color: forestgreen;
+        }
+
+        div:nth-child(4) {
+            flex: 1;
+            /* width: 200px; */
+            height: 150px;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</body>
+
+</html>
