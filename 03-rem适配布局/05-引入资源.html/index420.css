@@ -1,0 +1,16 @@
+html {
+    font-size: 40px;
+}
+div {
+    width: 6rem;
+    height: 6rem;
+    font-size: .5rem;
+}
+
+div:nth-child(1) {
+    background-color: blueviolet;
+}
+
+div:nth-child(2) {
+    background-color: brown;
+}

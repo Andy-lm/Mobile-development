@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* rem的优点是通过html中文字的大小来控制页面中元素的大小 */
+        html {
+            font-size: 20px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            overflow: hidden;
+            font-size: 40px;
+            width: 12rem;
+            height: 12rem;
+            background-color: cornflowerblue;
+        }
+
+        p {
+            width: 5rem;
+            height: 5rem;
+            /* em是通过父元素的字体大小来控制字元素 */
+            /* 
+            width: 1em;
+            height: 1em; 
+            */
+            background-color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p></p>
+    </div>
+</body>
+
+</html>

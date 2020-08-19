@@ -1,0 +1,17 @@
+html {
+    font-size: 60px;
+}
+div {
+    float: left;
+    width: 5rem;
+    height: 5rem;
+    font-size: .5rem;
+}
+
+div:nth-child(1) {
+    background-color: blueviolet;
+}
+
+div:nth-child(2) {
+    background-color: brown;
+}
