@@ -14,6 +14,10 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
+a,img {
+    -webkit-touch-callout: none;
+}
+
 div {
     box-sizing: border-box;
 }
@@ -199,11 +203,97 @@ nav .nav-common:nth-child(2) {
 .subnav-entry {
     display: flex;
     flex-wrap: wrap;
-    margin: 5px 4px;
+    margin: 0 4px;
+    padding:5px 0;
     border-radius: 8px;
-    background-color: sandybrown;
+    background-color: #ffffff;
 }
 
 .subnav-entry li {
     flex: 20%;
+}
+
+.subnav-entry li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subnav-entry-icon {
+    margin-top: 4px;
+    width: 28px;
+    height: 28px;
+    background: url(../images/subnav-bg.png) no-repeat;
+    background-size: 28px auto;
+}
+
+.sales-box {
+    margin: 4px;
+    background-color: #ffffff;
+    border-top: 1px solid #bbbbbb;
+}
+
+.sales-hd {
+    position: relative;
+    height: 44px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.sales-hd h2 {
+    position: relative; 
+    margin-top: 17px;
+    overflow: hidden;
+    text-indent: -999px;
+}
+
+.sales-hd h2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    width: 79px;
+    height: 15px;
+    background: url(../images/hot.png) no-repeat 0 -20px;
+    background-size: 79px auto;
+}
+
+.sales-hd a {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    padding: 3px 20px 3px 10px;
+    border-radius: 15px;
+    background: -webkit-linear-gradient(left, #FF506C, #FF6BC6);
+    color: #ffffff;
+}
+
+.sales-hd a::after {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    content: "";
+    display: block;
+    width: 7px;
+    height: 7px;
+    transform: rotate(45deg);
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+}
+
+.sales-bd .row {
+    display: flex;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.row a {
+    flex: 1;
+}
+
+.row a:nth-child(1) {
+    border-right: 1px solid #eeeeee;
+}
+
+.row a img {
+    width: 100%;
 }
