@@ -1,0 +1,15 @@
+div {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: blueviolet;
+}
+div span {
+  display: block;
+  width: 150px;
+  height: 100px;
+  background-color: blue;
+}
+div a:hover {
+  color: #333333;
+}

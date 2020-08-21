@@ -1,0 +1,22 @@
+@content:100px;
+// 注意：
+// 1.运算符左右两侧必须有一个空格隔开
+// 2.两个数参与运算，结果以有符号的数为准
+// 3.如果两个数都有单位，结果以有单位的数为准
+div {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: blueviolet;
+    span {
+        display: block;
+        width: @content + 50px;
+        height: @content;
+        background-color: blue;
+    }
+    a {
+        &:hover {
+            color: #666666 - #333333;
+        }
+    }
+}
