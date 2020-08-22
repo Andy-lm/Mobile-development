@@ -1,0 +1,22 @@
+// 导入我们的less文件
+@import "./common.less";
+
+body {
+    margin: 0 auto;
+    min-width: 320px;
+    width: 15rem;
+    font-family: Arial,Helvetica;
+    line-height: 1.5;
+    background-color: #F2F2F2;
+}
+// 定义基本文字大小
+@baseFont:50;
+.search-content {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 15rem;
+    height: 88rem / @baseFont;
+    background-color: #FFC001;
+}
