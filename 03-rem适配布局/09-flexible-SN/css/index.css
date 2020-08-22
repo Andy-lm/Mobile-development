@@ -1,0 +1,67 @@
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 750px;
+    min-width: 320px;
+    /* flexible默认是将屏幕划分为10等份 */
+    width: 10rem;
+    font-family: Arial,Helvetica;
+    line-height: 1.5;
+    background-color: #F2F2F2;
+}
+
+/* 我们的设计稿是750px的由于使用了flexible插件，其不管屏幕多大默认会将将屏幕分为10等份来设置html的字体大小 */
+/* 故我们利用媒体查询来设置一个最小的屏幕大小 */
+@media screen and (min-width: 750px) {
+    html {
+        font-size: 75px !important;
+    }
+}
+
+.search-content {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 10rem;
+    height: 1.173333rem;
+    background-color: #FFC001;
+}
+
+.classify {
+    width: 0.586667rem;
+    height: 0.933333rem;
+    margin: 0.146667rem 0.333333rem 0.093333rem 0.32rem;
+    background: url(../images/classify.png) no-repeat;
+    background-size: 0.586667rem 0.933333rem;
+}
+
+.login {
+    width: 1rem;
+    height: 0.933333rem;
+    margin: 0.133333rem;
+    color: #ffffff;
+    font-size: 0.333333rem;
+    text-align: center;
+    line-height: 0.933333rem;  
+}
+
+.search {
+    flex: 1;
+}
+
+.search input {
+    width: 100%;
+    margin-top: 0.16rem;
+    padding-left: 0.733333rem;
+    border: 0;
+    height: 0.88rem;
+    font-size: 0.333333rem;
+    border-radius: 0.44rem;
+    background-color: #FFF2CC;
+    outline: none;
+}
