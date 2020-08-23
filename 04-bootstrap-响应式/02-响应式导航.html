@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            float: left;
+            list-style: none;
+            text-align: center;
+            height: 30px;
+            background-color: darkorchid;
+        }
+
+        .container {
+            margin: 20px auto;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        @media screen and (min-width:768px) {
+            .container {
+                width: 750px;
+            }
+
+            li {
+                width: 93.75px;
+            }
+        }
+
+        @media screen and (max-width:767px) {
+            .container {
+                width: 100%;
+            }
+
+            li {
+                width: 33.33%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <ul>
+            <li>导航1</li>
+            <li>导航2</li>
+            <li>导航3</li>
+            <li>导航4</li>
+            <li>导航5</li>
+            <li>导航6</li>
+            <li>导航7</li>
+            <li>导航8</li>
+        </ul>
+    </div>
+</body>
+
+</html>
