@@ -23,8 +23,12 @@
     <![endif]-->
     <style>
         [class^="col"] {
-            border: 1px solid purple;
             height: 50px;
+            background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+        }
+
+        .row {
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -32,15 +36,13 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
-                <!-- 列嵌套最好添加一个row，这样可以取消父元素的padding值，而且高度和父级一样高 -->
-                <div class="row">
-                    <div class="col-md-6">a</div>
-                    <div class="col-md-6">b</div>
-                </div>
+            <div class="col-md-4">1
+                <!-- .visible-xs：设置在xs屏下显示 -->
+                <div class="visible-xs">11</div>
             </div>
-            <div class="col-md-4">2</div>
-            <div class="col-md-4">3</div>
+            <!-- .hidden-lg:设置在lg屏下隐藏 -->
+            <div class="col-md-4 hidden-lg">2</div>
+            <div class="col-md-4 col-lg-push-4">3</div>
         </div>
     </div>
 </body>
