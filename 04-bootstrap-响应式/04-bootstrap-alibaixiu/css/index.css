@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.container {
+    background-color: #ffffff;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #666666;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* 我们的设计稿最大的宽度是1280px所以我们要使用媒体查询来修改最大的宽度 */
+@media screen and (min-width:1280px) {
+    .container {
+        width: 1280px;
+    }
+}
+
+/* header部分 */
+header {
+    padding-left: 0 !important;
+}
+
+.logo {
+    background-color: #429ad9;
+}
+
+.logo img {
+    /* 在Bootstrap布局中我们一般不会给其设置高度 */
+    /* width: 100%; */
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* 为了解决在超小屏幕下图片过大的问题我们提前放一个span设置仅仅在小屏幕下可见 */
+.logo span {
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.nav {
+    background-color: #eeeeee;
+    border-bottom: 1px solid #cccccc;
+}
+
+.nav li a {
+    padding-left: 30px;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+}
+
+/* 当我们进入小屏幕与超小屏幕时，我们需要让里面的li浮动起来宽度改为当前德尔20% */
+@media screen and (max-width:991px) {
+    .nav li {
+        float: left;
+        width: 20%;
+    }
+
+    article {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .nav li a {
+        padding-left: 3px;
+        font-size: 14px;
+    }
+
+    .news li:nth-child(1) {
+        width: 100% !important;
+    }
+
+    .news li {
+        width: 50% !important;
+    }
+}
+
+.nav a:hover {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.nav a::before {
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+/* article部分 */
+
+.news li {
+    padding-right: 10px;
+    margin-bottom: 10px;
+    float: left;
+    width: 25%;
+    height: 128px;
+}
+
+.news li:nth-child(1) {
+    width: 50%;
+    height: 266px;
+}
+
+.news li:nth-child(1) p {
+    font-size: 20px;
+    line-height: 41px;
+    padding: 0 10px;
+}
+
+.news li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.news li a img {
+    width: 100%;
+    height: 100%;
+}
+
+.news li a p {
+    padding: 5px 10px;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 41px;
+    background: rgba(0, 0, 0, .5);
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.publish {
+    border-top: 1px solid #cccccc;
+}
+
+.publish .row {
+    border-bottom: 1px solid #cccccc;
+    padding: 10px 0;
+}
+
+.pic {
+    margin-top: 10px;
+}
+
+.pic img {
+    /* 在响应式布局中图片的宽度要设置为与盒子一样宽，这样才能使图片随着盒子大小来变化 */
+    width: 100%;
+}
+
+/* aside部分 */
+.banner img {
+    width: 100%;
+}
+
+.hot {
+    display: block;
+    margin-top: 20px;
+    border: 1px solid #cccccc;
+    padding: 0 20px 20px 20px;
+}
+
+.hot span {
+    border-radius: 0;
+    margin-bottom: 20px;
+}
+
+.hot p {
+    font-size: 12px;
+}
