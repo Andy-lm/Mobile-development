@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            /* vmin与vmax分别为视口中较大与较小的那个
+               常常用来做移动端的选转 */
+            width: 10vmin;
+            height: 10vmax;
+            /* 
+            vw与vh相当于视口的百分之一宽与高
+            */
+            /* 
+            width: 10vw;
+            height: 10vh;
+             */
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <script>
+        let oDiv = document.querySelector('div');
+        console.log(window.innerWidth);
+        console.log(window.innerHeight);
+        console.log(getComputedStyle(oDiv).width);
+        console.log(getComputedStyle(oDiv).height);
+    </script>
+</body>
+
+</html>

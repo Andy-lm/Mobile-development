@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+    <script>
+        let scale = 1 / window.devicePixelRatio;
+        let metaText = `<meta name="viewport" content="width=device-width, initial-scale=${scale},maximum-scale=${scale},minimum-scale=${scale},user-scalable=no">`;
+        document.write(metaText);
+        // 根据屏幕的大小来自动设置html字体的大小
+        document.documentElement.style.fontSize = window.innerWidth / 15 + 'px';
+        console.log(window.innerWidth);
+    </script>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
